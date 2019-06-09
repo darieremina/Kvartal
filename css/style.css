@@ -70,6 +70,10 @@ body {
     text-decoration: none;
 }
 
+.about-us {
+    margin-bottom: 110px;
+}
+
 .about-us__wrapper {
     padding-top: 600px;
     margin-bottom: 246px;
@@ -173,4 +177,132 @@ body {
 
 .about-us__suggest {
     margin-bottom: 0;
+}
+
+.assortment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.assortment__title {
+    margin: 0;
+    padding: 23px 93px 19px 92px;
+    margin-bottom: 115px;
+
+    color: #765446;
+
+    background-color: #cad7e0;
+    box-shadow: 0 5px 9.5px 0.5px rgba(0, 0, 0, 0.25);
+
+    width: 640px;
+
+    font-size: 55px;
+    line-height: 66.2px;
+    letter-spacing: 2.75px;
+}
+
+.assortment__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 84px;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.assortment__item {
+    padding-top: 530px;
+
+    position: relative;
+
+    font-size: 35px;
+    line-height: 70px;
+    text-transform: none;
+
+    width: 450px;
+
+    color: #765446;
+
+    text-align: center;
+}
+
+.assortment__item::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 450px;
+    height: 450px;
+
+    background-repeat: no-repeat;
+}
+
+.assortment__item:first-child::before {
+    background-image: url(../img/item1.png);
+}
+
+.assortment__item:nth-child(2)::before {
+    background-image: url(../img/item2.png);
+}
+
+.assortment__item:last-child::before {
+    background-image: url(../img/item3.png);
+}
+
+.assortment__item::after {
+    content: "";
+
+    position: absolute;
+    top: 476px;
+    left: 15px;
+
+    width: 420px;
+    height: 15px;
+
+    background-color: #765446;
+
+    box-shadow: 0 6px 16.9px 1.1px rgba(0, 0, 0, 0.25);
+}
+
+.brands {
+    background-image: linear-gradient(340deg, #d7d7d7, #ffffff);
+
+    padding: 46px 98px 64px 153px;
+
+    text-align: center;
+
+    margin-bottom: 141px;
+}
+
+.brands__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 81px;
+
+    font-size: 40px;
+    line-height: 70px;
+
+    color: #765446;
+}
+
+.brands__list {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
