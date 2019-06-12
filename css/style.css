@@ -23,7 +23,7 @@ body {
 }
 
 .nav__logo {
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 }
 
 .nav__logo-img {
@@ -33,12 +33,11 @@ body {
 
 .nav__title {
     font-size: 30px;
-    line-height: 66.2px;
     letter-spacing: 9px;
     font-weight: normal;
 
     margin: 0;
-    margin-bottom: 75px;
+    margin-bottom: 57px;
     padding: 7px 8px;
 
     color: #765446;
@@ -51,10 +50,10 @@ body {
 .nav__list {
     list-style: none;
 
-    width: 1920px;
-    padding: 0 284px;
+    width: 1360px;
+    padding: 0;
     margin: 0;
-    margin-bottom: 62px;
+    margin-bottom: 39px;
 
     display: flex;
     justify-content: space-between;
@@ -71,7 +70,7 @@ body {
 }
 
 .about-us {
-    margin-bottom: 110px;
+    margin-bottom: 93px;
 }
 
 .about-us__wrapper {
@@ -104,11 +103,11 @@ body {
     position: absolute;
 
     margin: 0;
-    padding: 83px 29px 103px 89px;
-    width: 879px;
+    padding: 83px 29px 77px 89px;
+    width: 763px;
 
     top: 154px;
-    right: 117px;
+    right: 115px;
 
     font-size: 60px;
     line-height: 66.2px;
@@ -125,23 +124,39 @@ body {
 .about-us__caption span {
     text-transform: lowercase;
 
-    margin-left: 277px;
+    margin-left: 239px;
 }
 
 .about-us__wrap {
     background-image: url("../img/description.png");
     background-repeat: no-repeat;
+    background-position: 101px 0;
 
     position: relative;
 }
 
+.about-us__wrap::before {
+    content: "";
+
+    position: absolute;
+    top: -134px;
+    left: 0;
+
+    width: 860px;
+    height: 860px;
+
+    background-image: linear-gradient(327deg, #f7f7f7 10%, #e6e5e5 50%, #fdfdfd 90%);
+
+    z-index: -1;
+}
+
 .about-us__title {
-    padding: 26px 36px 18px 185px;
+    padding: 16px 27px 2px 176px;
 
     position: absolute;
 
-    top: -109px;
-    left: 690px;
+    top: -93px;
+    left: 801px;
 
     z-index: -1;
 
@@ -157,7 +172,7 @@ body {
 }
 
 .about-us__description-wrap {
-    padding: 91px 55px 8px 1054px;
+    padding: 76px 55px 8px 1054px;
 }
 
 .about-us__description-wrap p {
@@ -172,7 +187,7 @@ body {
 }
 
 .about-us__description {
-    margin-bottom: 60px;
+    margin-bottom: 67px;
 }
 
 .about-us__suggest {
@@ -187,9 +202,9 @@ body {
     text-align: center;
 }
 
-.assortment__title {
+.title {
     margin: 0;
-    padding: 23px 93px 19px 92px;
+    padding: 13px 0 4px;
     margin-bottom: 115px;
 
     color: #765446;
@@ -207,18 +222,18 @@ body {
 .assortment__list {
     margin: 0;
     padding: 0;
-    margin-bottom: 84px;
+    margin-bottom: 64px;
 
     list-style: none;
 
     display: flex;
     justify-content: space-between;
 
-    width: 100%;
+    width: 90%;
 }
 
 .assortment__item {
-    padding-top: 530px;
+    padding-top: 510px;
 
     position: relative;
 
@@ -244,6 +259,14 @@ body {
     height: 450px;
 
     background-repeat: no-repeat;
+}
+
+.assortment__item:nth-child(2)::after {
+    top: 479px;
+}
+
+.assortment__item:last-child::after {
+    top: 477px;
 }
 
 .assortment__item:first-child::before {
@@ -276,17 +299,17 @@ body {
 .brands {
     background-image: linear-gradient(340deg, #d7d7d7, #ffffff);
 
-    padding: 46px 98px 64px 153px;
+    padding: 28px 151px 64px 101px;
 
     text-align: center;
 
-    margin-bottom: 141px;
+    margin-bottom: 136px;
 }
 
 .brands__title {
     margin: 0;
     padding: 0;
-    margin-bottom: 81px;
+    margin-bottom: 62px;
 
     font-size: 40px;
     line-height: 70px;
@@ -306,3 +329,211 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.order {
+    text-align: center;
+
+    margin-bottom: 136px;
+}
+
+.order__title {
+    margin: 0 auto 113px;
+}
+
+.order__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 58px;
+}
+
+.form {
+    width: 810px;
+    padding: 87px 42px 57px 52px;
+
+    box-shadow: 0 6px 16.9px 1.1px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(327deg, #f7f7f7 10%, #e6e5e5 50%, #fdfdfd 90%);
+}
+
+.form__wrapper {
+    margin: 0;
+    padding: 0;
+
+    width: 790px;
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.form__input {
+    margin-bottom: 19px;
+    padding: 10px 10px 0;
+}
+
+.form__input:last-child {
+    margin-bottom: 30px;
+}
+
+.form__textarea {
+    padding: 20px 10px 120px;
+}
+
+.order__text {
+    padding: 0;
+    padding-top: 35px;
+    padding-right: 114px;
+    margin: 0;
+    
+
+    font-size: 35px;
+    line-height: 70px;
+    text-transform: none;
+    
+    width: 736px;
+
+    text-align: left;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.contacts__title {
+    margin: 0 auto 113px;
+}
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts__wrap {
+    text-align: right;
+
+    width: 710px;
+    padding-top: 48px;
+    padding-right: 16px;
+
+    font-size: 35px;
+    line-height: 70px;
+    text-transform: none;
+}
+
+.contacts__address {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 67px;
+}
+
+.contacts__text {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__map {
+    padding-top: 102px;
+
+    position: relative;
+}
+
+.contacts__map::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 41px;
+
+    width: 864px;
+    height: 517px;
+
+    z-index: -1;
+
+    background-image: url("../img/map-background.png");
+    background-repeat: no-repeat;
+}
+
+.footer {
+    margin-top: 215px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1807px;
+}
+
+.footer__social-list {
+    margin: 0;
+    padding: 0;
+    margin-right: 145px;
+    padding-top: 47px;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 200px;
+}
+
+.footer__social-item {
+    width: 38px;
+    height: 38px;
+}
+
+.footer__social-item:first-child {
+    background-image: url("../img/vk-1.png");
+}
+
+.footer__social-item:nth-child(2) {
+    background-image: url("../img/facebook.png");
+}
+
+.footer__social-item:last-child {
+    background-image: url("../img/instagram.png");
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 14px;
+}
+
+.footer__logo {
+    margin-bottom: 17px;
+}
+
+.footer__title {
+    font-size: 20px;
+    letter-spacing: 6px;
+
+    margin: 0;
+    padding: 0;
+    padding: 9px 25px 8px 24px;
+
+    background-image: linear-gradient(332deg, #f7f7f7 10%, #e6e5e5 50%, #fdfdfd 90%);
+}
+
+.footer__address {
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+    text-transform: none;
+
+    width: 335px;
+    text-align: right;
+}
+
+

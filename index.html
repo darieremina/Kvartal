@@ -37,7 +37,7 @@
             </div>
         </section>
         <section class="assortment">
-            <h2 class="assortment__title">Ассортимент</h2>
+            <h2 class="assortment__title title">Ассортимент</h2>
             <ul class="assortment__list">
                 <li class="assortment__item">Мебельная фурнитура</li>
                 <li class="assortment__item">Кромочные материалы</li>
@@ -56,9 +56,52 @@
                 <li class="brands__item"><img src="img/nomet.png" alt="" width="136" height="40"></li>
             </ul>
         </section>
+        <section class="order">
+            <h2 class="order__title title">Заказать</h2>
+            <div class="order__wrapper">
+                <form action="" method="POST" class="form">
+                    <p class="form__wrapper">
+                        <input type="text" class="form__input" name="name" value="Имя">
+                    </p>
+                    <p class="form__wrapper">
+                        <input type="text" class="form__input" name="phone" value="Телефон">
+                    </p>
+                    <p class="form__wrapper">
+                        <input type="email" class="form__input" name="email" value="E-mail">
+                    </p>
+                    <p class="form__wrapper">
+                       <textarea class="form__textarea" name="comment">Комментарий</textarea>
+                    </p>
+                </form>
+                <p class="order__text">Заполните форму. Наш менеджер свяжется с вами и проконсультирует по наличию позиций и доставке.</p>
+            </div>
+        </section>
+        <section class="contacts">
+            <h2 class="contacts__title title">Магазин</h2>
+            <div class="contacts__wrapper">
+                <div class="contacts__wrap">
+                    <p class="contacts__address">Наш магазин находится по адресу:<br>г. Нижний Новгород, ул. Ватутина, 11 Режим работы:<br>пн-сб 10:00-20:00</p>
+                    <p class="contacts__text">Будем рады вас видеть!</p>
+                </div>
+                <div class="contacts__map">
+                    <img src="img/map.png" alt="Карта" width="723" height="482">
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="page-footer container">
-        
+    <footer class="footer container">
+        <ul class="footer__social-list">
+            <li class="footer__social-item"></li>
+            <li class="footer__social-item"></li>
+            <li class="footer__social-item"></li>
+        </ul>
+        <div class="footer__wrapper">
+            <a href="#" class="footer__logo">
+                <img src="img/footer-logo.png" alt="Логотип магазина Квартал" class="footer__logo-img" width="248" height="42">
+            </a>
+            <p class="footer__title">Магазин мебельной фурнитуры</p>>
+        </div>
+        <p class="footer__address">г. Нижний Новгород Ватутина, 11</p>
     </footer>
 </body>
 </html>
