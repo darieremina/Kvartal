@@ -10,6 +10,18 @@
     src: url("../fonts/Mont-SemiBold.ttf");
 }
 
+@font-face {
+    font-family: Denistina;
+    font-weight: normal;
+    src: url("../fonts/denistina.ttf");
+}
+
+@font-face {
+    font-family: GillSans;
+    font-weight: normal;
+    src: url("../fonts/ofont_ru_Gill_Sans.ttf");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -119,16 +131,16 @@ body {
     position: absolute;
 
     margin: 0;
-    padding: 75px 29px 77px 89px;
-    width: 763px;
+    padding: 75px 29px 77px 79px;
+    width: 772px;
 
     top: 154px;
     right: 115px;
 
     font-size: 60px;
     line-height: 66.2px;
-    letter-spacing: 3px;
     font-weight: normal;
+    font-family: GillSans, Helvetica, sans-serif;
 
     color: #765446;
 
@@ -139,9 +151,11 @@ body {
 
 .about-us__caption span {
     text-transform: lowercase;
-    font-size: 40px;
+    font-size: 70px;
+    letter-spacing: 3px;
+    font-family: Denistina, Helvetica, sans-serif;
 
-    margin-left: 239px;
+    margin-left: 317px;
 }
 
 .about-us__wrap {
@@ -459,6 +473,7 @@ body {
 
 .contacts__map {
     padding-top: 102px;
+    margin-bottom: 71px;
 
     position: relative;
 }
@@ -480,8 +495,14 @@ body {
 }
 
 .footer {
-    margin-top: 215px;
+    padding-top: 144px;
+    padding-bottom: 59px;
 
+    background-image: linear-gradient(to bottom, #ffffff, #dbdbdb);
+    opacity: 0.8;
+}
+
+.footer__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
